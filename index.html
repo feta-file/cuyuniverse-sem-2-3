@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+
+<!-- NavBar -->
+
+<body>
+    <header>
+        <div class="container-logo">
+            <img src="assets/img/unnamed.webp">
+            <h1 class="logo">LOGO</h1>
+        </div>
+
+        <nav class="container-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#intro">ABOUT US</a></li>
+                <li><a href="mailto:fetafile@gmail.com">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">FOLLOW US</button>
+    </header>
+
+    <!-- Intro -->
+    <div class="container-intro">
+        <div class="intro-content">
+            <p class="title">Hello, Feta is here</p>
+            <p class="description">Ngoding Cuy!</p>
+            <img src="assets/img/unnamed.webp" class="img-foto-1">
+        </div>
+    </div>
+
+    <!-- Parallax -->
+    <div class="parallax" id="menu">
+        <div class="container-cards">
+            <div class="cards">
+                <div class="card-item">
+                    <i class="fas fa-clock fa-3x"></i>
+                    <p class="title">Saya jualan kelas nih</p>
+                    <p class="description">Kelas ngoding terasique dan terjangkau!</p>
+                </div>
+                <div class="card-item">
+                    <i class="fas fa-truck-fast fa-3x"></i>
+                    <p class="title">Pengiriman cepat</p>
+                    <p class="description">Kelas ngoding terasique dan terjangkau!</p>
+                </div>
+                <div class="card-item">
+                    <i class="fas fa-star fa-3x"></i>
+                    <p class="title">Rating banyak</p>
+                    <p class="description">Kelas ngoding terasique dan terjangkau!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-tentang">
+            <div class="tentang" id="intro">
+                <p class="title">Saya adalah programmer</p>
+                <p class="description">Ngoding aja dulu, jagonya belakangan</p>
+                <div class="mt-30">
+                    <button class="btn-cta" onclick="alert('silahkan kontak: whatsapp')">Mari Kerjasama</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--  Footer -->
+
+    <footer id="contact">
+        <div class="footer-items">
+            <div class="footer-logo">
+                <img src="assets/img/unnamed.webp">
+            </div>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Hubungi kami</p>
+                    <p>Alamat jl.</p>
+                    <p>notelepp</p>
+                    <p>PT Sinar Jaya</p>
+                </div>
+                <div class="footer-logo">
+                    <i class="fab fa-whatsapp fa-2x" onclick="redirWhatsapp()"></i>
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        function redirInstagram() {
+            window.location.href = "https://instagram.com/luis.nihbos"
+        }
+
+        function redirWhatsapp() {
+            window.location.href = "https://wa.me/6285183013377"
+        }
+    </script>
+
+</body>
+
+</html>

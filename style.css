@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --prim-dark: #0c0d6d;
+    --prim-light: #ebf0ff;
+    --sec-dark: #4e169c;
+    --sec-light: #dcd4ff;
+    --whatsapp: #2eb947;
+    --hover: goldenrod
+}
+
+/* NavBar */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--prim-dark);
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo {
+    margin-right: auto;
+    /*dipentalkan dari kanan */
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+
+.container-logo img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.logo {
+    margin-left: 10px;
+    color: var(--prim-light);
+    cursor: pointer;
+    transition: all .2s ease 0s;
+}
+
+.logo:hover {
+    color: var(--hover);
+}
+
+
+.container-nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+.container-nav li {
+    list-style-type: none;
+    padding: 8px;
+}
+
+.container-nav a {
+    text-decoration: none;
+    color: var(--prim-light);
+    transition: all .2s ease 0s;
+}
+
+.container-nav a:hover {
+    color: var(--hover);
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--whatsapp);
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease 0s;
+}
+
+.btn-cta:hover {
+    background-color: #184f24;
+}
+
+/* Intro */
+
+.container-intro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro-content .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.intro-content .description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto-1 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Parallax */
+/* About Us */
+
+.parallax {
+    background-image: url('assets/img/pngtree-man-on-headphones-with-a-colorful-background-image_2952867.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200vh;
+}
+
+.tentang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sec-dark);
+    padding: 40px;
+}
+
+.tentang .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--sec-light);
+}
+
+.tentang .description {
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--sec-light);
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* menu */
+
+.container-cards {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    height: 100vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 200px auto;
+    opacity: .95;
+}
+
+.card-item {
+    width: 25%;
+    background-color: var(--sec-dark);
+    color: var(--sec-light);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.card-item .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--sec-light);
+}
+
+.card-item .description {
+    font-size: 12px;
+    color: var(--sec-light);
+}
+
+.fas {
+    margin-bottom: 20px;
+    transition: all .5s ease 0s;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.fas:hover {
+    color: goldenrod;
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+    margin: 0 auto;
+    bottom: 0;
+    height: 100%;
+    background-color: var(--prim-dark);
+    color: var(--prim-light);
+}
+
+.footer-items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: auto;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px auto;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-content .footer-text {
+    text-align: right;
+}
+
+.footer-logo {
+    margin-top: auto;
+
+}
+
+.footer-logo .fab {
+    transition: all .3s ease;
+}
+
+.footer-logo .fab:hover {
+    color: goldenrod;
+}
+
+
+@media screen and (max-width: 500px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 80%;
+    }
+
+    .container-intro {
+        max-width: 500px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .img-foto-1 {
+        max-width: 500px;
+        width: 100%;
+        padding: 0;
+    }
+}
